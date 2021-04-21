@@ -8,7 +8,7 @@ interface Options {
 
 const bind: DirectiveFunction = (el: HTMLElement, binding: DirectiveBinding, _vnode: VNode) => {
   const { len, trail }: Options = binding.value
-  const text = el.innerText
+  const text = el.textContent || ''
 
   const cutText = addTrail(extractText(text, len), trail)
 

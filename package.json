@@ -1,8 +1,8 @@
 {
   "name": "vue-cut",
   "version": "0.1.0",
-  "main": "dist/vue-thousand-separator.esm.js",
-  "unpkg": "dist/vue-thousand-separator.umd.js",
+  "main": "dist/vue-cut.esm.js",
+  "unpkg": "dist/vue-cut.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "yarn build:umd & yarn build:es",
@@ -10,6 +10,13 @@
     "build:es": "rollup --config rollup.config.js --format es --file dist/vue-cut.esm.js",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryo-gk/vue-cut.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryo-gk/vue-cut/issues"
   },
   "author": "ryo_gk",
   "license": "MIT",
